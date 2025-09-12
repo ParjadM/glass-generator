@@ -15,7 +15,7 @@ This generator is packed with advanced features that set it apart:
 
 ✨ Real-Time Live Preview: Instantly see the results of every adjustment in the interactive preview panel.
 
-** draggable Interface:** Drag the preview element around to see how the glass effect interacts with different parts of the background.
+🖐️ Draggable Interface: Drag the preview element around to see how the glass effect interacts with different parts of the background.
 
 🎨 Full Customization:
 
@@ -23,9 +23,9 @@ Adjust Background Opacity, Blur Intensity, and Border Radius with precise slider
 
 Select any Background Color and Border Color with live color pickers.
 
-** shadows Advanced Box Shadow Control:** Go beyond basic shadows with dedicated controls for Offset X/Y, Blur, and Spread.
+🕶️ Advanced Box Shadow Control: Go beyond basic shadows with dedicated controls for Offset X/Y, Blur, and Spread.
 
-grain Noise Overlay: Add a subtle, textured noise layer with a single click to enhance the frosted glass look.
+🌾 Noise Overlay: Add a subtle, textured noise layer with a single click to enhance the frosted glass look.
 
 🖼️ Customizable Background: Test your design against different backdrops:
 
@@ -39,7 +39,7 @@ Gradient: A custom two-color linear gradient.
 
 📄 Multiple Element Types: Generate code for different HTML elements, including <div>, <button>, <section>, and <form>.
 
-** clipboard Generated Code:** Automatically get clean, production-ready CSS and HTML, complete with "Copy to Clipboard" buttons.
+📋 Generated Code: Automatically get clean, production-ready CSS and HTML, complete with "Copy to Clipboard" buttons.
 
 Tech Stack
 This project was built from the ground up using modern, efficient web technologies.
