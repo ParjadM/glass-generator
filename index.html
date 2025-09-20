@@ -8,7 +8,7 @@
     <!-- SEO and Social Sharing Meta Tags -->
     <meta name="description" content="A free, advanced CSS generator to create beautiful glassmorphism (frosted glass) effects with a live preview, presets, and customizable backgrounds.">
     <meta name="author" content="Parjad Minooei">
-    <meta name="keywords" content="glassmorphism, css generator, frosted glass, ui design, web development tool">
+    <meta name="keywords" content="glassmorphism, css generator, frosted glass, ui design, web development tool, backdrop-filter">
     
     <!-- Open Graph (for Social Sharing) -->
     <meta property="og:title" content="Advanced Glassmorphism CSS Generator">
@@ -20,9 +20,6 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
     
-    <!-- A-ADS AD UNIT -->
-    <script async src="https://a-ads.com/a-ads-async.js"></script>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8C5G7BTNPG"></script>
     <script>
@@ -124,12 +121,14 @@
 <body class="bg-gray-900 text-gray-200 antialiased">
     <div class="container mx-auto p-4 md:p-8">
         <header class="text-center mb-8">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">Advanced Glassmorphism Generator</h1>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">Advanced Glassmorphism CSS Generator</h1>
             <p class="text-gray-400 mt-2 text-lg">Create unique glass effects with advanced controls.</p>
         </header>
 
         <main class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- CONTROLS PANEL -->
             <div class="bg-gray-800 p-4 md:p-6 rounded-2xl shadow-lg border border-gray-700 space-y-4">
+                <!-- PRESETS -->
                 <div>
                     <h2 class="text-2xl font-semibold mb-4 border-b border-gray-600 pb-3">Presets</h2>
                     <div id="presetsContainer" class="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -139,6 +138,7 @@
                          <button data-preset="minimal" class="text-sm py-2 px-3 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors">Minimalist</button>
                     </div>
                 </div>
+                <!-- MAIN CONTROLS -->
                 <div>
                     <div class="flex justify-between items-center mb-4 border-b border-gray-600 pb-3">
                         <h2 class="text-2xl font-semibold">Main Controls</h2>
@@ -180,6 +180,7 @@
                     </div>
                 </div>
                 
+                <!-- ADVANCED CONTROLS -->
                 <div>
                     <h2 class="text-2xl font-semibold my-4 border-b border-gray-600 pb-3">Advanced Controls</h2>
                     <div class="space-y-5">
@@ -216,7 +217,9 @@
                 </div>
             </div>
 
+            <!-- PREVIEW & CODE PANEL -->
             <div class="lg:sticky lg:top-8 self-start flex flex-col gap-8">
+                <!-- Live Preview -->
                 <div id="previewArea" class="relative w-full h-64 sm:h-80 bg-gray-800 rounded-2xl overflow-hidden flex items-center justify-center p-4 border border-gray-700 transition-colors duration-300">
                     <div id="bgShape1" class="absolute w-64 h-64 bg-pink-600 rounded-full -top-16 -left-16 filter blur-3xl opacity-50 transition-opacity"></div>
                     <div id="bgShape2" class="absolute w-72 h-72 bg-red-600 rounded-full -bottom-20 -right-10 filter blur-3xl opacity-40 transition-opacity"></div>
@@ -224,6 +227,7 @@
                     </div>
                 </div>
 
+                <!-- Code Output with Tabs -->
                 <div class="bg-gray-800 p-4 md:p-6 rounded-2xl shadow-lg border border-gray-700">
                     <div class="flex border-b border-gray-600 mb-4">
                         <button id="cssTabBtn" class="py-2 px-4 font-semibold text-white border-b-2 border-indigo-500">CSS</button>
@@ -246,6 +250,23 @@
                 </div>
             </div>
         </main>
+
+        <!-- SEO Content Section -->
+        <section class="bg-gray-800 p-4 md:p-6 mt-8 rounded-2xl shadow-lg border border-gray-700 text-gray-400">
+            <h2 class="text-2xl font-semibold text-gray-200 border-b border-gray-600 pb-3 mb-4">About This Glassmorphism Generator</h2>
+            <p class="mb-4">
+                Born from a developer's need for a more powerful and intuitive design tool, this generator was built to provide granular control over the CSS glassmorphism effect. Unlike other basic tools, this generator allows for deep customization of blur, transparency, shadows, and even advanced properties like a noise overlay to create the perfect frosted glass look for any web project.
+            </p>
+            <h2 class="text-2xl font-semibold text-gray-200 border-b border-gray-600 pb-3 mb-4">How to Create the Perfect Glass Effect</h2>
+            <p class="mb-4">
+                The glassmorphism effect is a combination of several key CSS properties working together. This tool simplifies the process, but understanding the core concepts is key:
+            </p>
+            <ul class="list-disc list-inside space-y-2">
+                <li><strong>Backdrop Filter (Blur):</strong> This is the most crucial property. The `backdrop-filter: blur()` CSS rule is what creates the frosted glass look by blurring the content behind the element. Use the "Background Blur" slider to adjust the intensity.</li>
+                <li><strong>Transparency (Opacity):</strong> A semi-transparent background is essential. We use an `rgba` color value for the background. The "Background Opacity" slider controls the 'alpha' channel, making the element more or less see-through.</li>
+                <li><strong>Subtle Border & Radius:</strong> A light, semi-transparent border helps define the edge of the glass pane. The `border-radius` property gives it a soft, modern look.</li>
+            </ul>
+        </section>
         
         <div class="mt-8">
              <div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;">
